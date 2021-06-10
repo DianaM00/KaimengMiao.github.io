@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles-ShoppingCart.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="topnav" id="webTopnav">
+            <a href="#">About us</a>
+            <a href="#">Insider ACCOUNT</a>
+            <a href="#">My STORE</a>
+        </nav>
+
+        <div class="search-line" id="logo">
+            <a href="#Home" title="Micro Center Home Page">
+                <img src="https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/images_sf_MC_logo.png" alt="Micro Center">
+            </a>
+            <form id="form-search" class="form-inline-nav" method="POST" style="display:block;">
+                <input id="search-text" class="search-text" name="search-text" type="text" placeholder="Search" autocomplete="off">
+                <input id="search-submit" class="search-submit" name="search-button" type="submit" aria-label="Begin Product Search" title="search for products" value="search" onclick="ga('mc.send', 'event', 'header', 'search_go_button', 'search');">
+            </form>
+            <dl class=cart-nav>
+                <img src="shopping cart.jpg" alt="Shopping cart" width="23" height="23">
+                <dt class="cart-title"> My Cart: </dt>
+                <dt class="items-amount">
+                    <a href="Shopping cart" onclick="ga('mc.send','event','header','cart','cart');">
+                        <strong>1</strong>
+                         items
+                    </a>
+                </dt>
+            </dl>
+        </div>
+
+        <div class="navbar" id="webNavbar">
+            <ul class="navbar-mainTitle">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Products</a>
+                    <div class="dropdown-content1">
+                        <a href="#">Refuribshed Deals</a>
+                        <a href="#">Clearacne</a>
+                        <a href="#">Hot AD Deals</a>
+                        <a href="#">Computers</a>
+                        <a href="#">Apple</a>
+                        <a href="#">Computer Parts</a>
+                        <a href="#">PC Builders</a>
+                        <a href="#">Electronics</a>
+                        <a href="#">Maker/STM</a>
+                        <a href="#">Networking</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Software & Gaming</a>
+                    </div> 
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Brand Showcase</a>
+                    <div class="dropdown-content2">
+                        <a href="#">IMAGES</a>
+                    </div>
+                </li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Help</a></li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Community</a></li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Service & Repair</a></li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Online Catalog</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="section-1" id="cart-item">
+            <a><h4>CART ITEM</h4></a>
+            <div class="cart-product">
+                <a><h6>HP Pavilion Gaming 15-ec2021nr 15.6" Platinum Collection Laptop Computer - Black</h6></a>
+                <a><l1><small style="float:right; font-size:12px; margin-right: 20px;">Usually ships in 5-7 business days.</small></l1></a>
+                <a><button class="select-btn" id="selec-btn" onclick="document.getElementById('select-btn').style.backgroundColor='tomato'"> </button></a>
+                <a><img src="product 3.jpg"></a>
+                <a><l1 style="font-size:14px; display:block; padding:20px 0px;">Quantity: </l1></a>  
+                <form method="POST">
+                    <input type="text" class="typeQuantity" id="typeQuantity" name="typeIn-amount" placeholder="1" autocomplete="off">
+                </form>
+                <a><l1 style="font-size:14px; padding-top:20px; display:block;">Price: $699.99</l1></a> 
+                <a><h6 class="remove-btn">REMOVE</h6></a>
+                <a href="#"><h6 class="wishlist-btn">Add to Wish List</h6></a>
+                <a href="CheckoutPage.html"><h5 id="purchase-1" onclick="myFunction()">PURCHASE NOW</h5></a>
+            </div>
+        </div>
+        <div class="section-2" id="cartSummary-Info">
+            <a><h4>Order Summary</h4></a>
+            <div class="order-S">
+                <a><l1>Shipping Options:</l1></a>
+                <form method="POST" style="margin:5px 0px;">
+                    <input type="text" class="shipping" id="shipping" name="ship-opitons" placeholder="Standards" autocomplete="off">
+                </form>
+                <a><l1>Store Selection:</l1></a>
+                <form method="POST" style="margin:5px 0px;">
+                    <input type="text" class="store-s" id="store-s" name="store-select" placeholder="Micro Center Web Store" autocomplete="off">
+                </form>
+                <div clas="discountPrice">
+                    <a><p>Subtotal: $699.99</p></a>
+                    <a><p>Shipping: $20.00</p></a>
+                    <a><hr></a>
+                    <a><l1><b>Grand Total: $719.99</b></l1></a>
+                </div>
+                <a href="CheckoutPage.html"><h5 id="purchase-2" onclick="myFunction()">PURCHASE NOW</h5></a>
+            </div>
+
+            <div class="Payment-Info">
+                <a><h6>Payment Methods Accepted</h6></a>
+                <a><l1 style="font-size:10px;">At Micro Center stores and Micro Center Online, you can shop using your MasterCard, VISA, American Express, Discover® Network Card, Diners Club, Micro Center Insider™ Credit Card and debit cards. Micro Center and Micro Center Online are based in the state of Ohio, USA.</l1></a>
+                <div class="payment-Set">
+                    <a><img src="mastercard.png"></a>
+                    <a><img src="VISA.png"></a>
+                    <a><img src="AMEX.png"></a>
+                    <a><img src="Discover.png"></a>
+                    <a><img src="DinersClub.png"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="rectangle">
+            <div class="customer-nav">
+                <a><h5>Customer Service</h5></a>
+                <a><l1>Check Out Status</l1></a>
+                <a><l1>How To Return</l1></a>
+                <a><l1>Merchandise</l1></a>
+                <a><l1>Service & Repair</l1></a>
+                <a><l1>Frequently Asked</l1></a>
+                <a><l1>Questions</l1></a>
+                <a><l1>Safe Shopping Promise</l1></a>
+                <a><l1>Recycling</l1></a>
+                <a><l1>Protection Plans</l1></a>
+            </div>
+            <div class="shopping-nav">
+                <a><h5>Shopping</h5></a>
+                <a><l1>Store Loactions</l1></a>
+                <a><l1>In-Store Pickup</l1></a>
+                <a><l1>Product Avaliability</l1></a>
+                <a><l1>Online Order</l1></a>
+                <a><l1>Restrictions</l1></a>
+                <a><l1>Return Policy</l1></a>
+                <a><l1>Credit Cards Accepted</l1></a>
+                <a><l1>Shipping Options</l1></a>
+            </div>
+            <div class="resource-nav">
+                <a><h5>Resources & Tools</h5></a>
+                <a><l1>Community</l1></a>
+                <a><l1>Rebate Center</l1></a>
+                <a><l1>Ink & Toner Finder</l1></a>
+                <a><l1>Careers</l1></a>
+                <a><l1>Sell to Micro Center</l1></a>
+                <a><l1>Site Map</l1></a>
+            </div>
+            <div class="indemand-nav">
+                <a><h5>In-Demand & Tech</h5></a>
+                <a><l1>Refurbished Deals</l1></a>
+                <a><l1>Closeouts</l1></a>
+                <a><l1>Open Box</l1></a>
+                <a><l1>Tech Support</l1></a>
+                <a><l1>In-Store Clinics</l1></a>
+            </div>
+
+            <div class="sideContent">
+                <div class="sg">
+                    <a><p><b>Satisfaction Guaranteed</b></p></a>
+                    <a><l1>We guarantee your satisfaction on every product</l1></a>
+                    <a><l1>we sell with a full refund in accordance with our</l1></a>
+                    <a><l1>return policy - no reciept needed if you have a</l1></a>
+                    <a><l1>Micro Center Insider Account.</l1></a>
+                </div>
+                <div class="careers">
+                    <a><l1>Work with the latest in computer and digital</l1></a>
+                    <a><l1>technology. Search the Micro Center Job Access</l1></a>
+                    <a><l1>site to review our latest openings.</l1></a>
+                    <a><button>CAREERS</button></a>
+                </div>
+                <div class="mediaIcon"></div>
+            </div>
+
+            <div class="Auth-nav">
+                <p>&copy 2021 Micro Electronics, Inc.</p>
+                <a href="#">About Micro Center</a>
+                <a href="#">Accessibility Policy</a>
+                <a href="#">California Privacy Rights</a>
+                <a href="#">Do Not Sell My Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions: Site</a>
+                <a href="#">Terms and Conditions: Sale</a>
+                <a href="#">ACopyrights & Trademarks</a>
+                <a href="#">Account Sign In</a>
+            </div>
+
+        </div>
+    </footer>
+
+    
+</body>
+</html>

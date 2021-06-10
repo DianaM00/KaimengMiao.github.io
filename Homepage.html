@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles-Home.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="topnav" id="webTopnav">
+            <a href="#">About us</a>
+            <a href="#">Insider ACCOUNT</a>
+            <a href="#">My STORE</a>
+        </nav>
+
+        <div class="search-line" id="logo">
+            <a href="#Home" title="Micro Center Home Page" class="WebsiteLogo">
+                <img src="https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/images_sf_MC_logo.png" alt="Micro Center">
+            </a>
+            <form id="form-search" class="form-inline-nav" method="POST" style="display:block;">
+                <input id="search-text" class="search-text" name="search-text" type="text" placeholder="Search" autocomplete="off">
+                <input id="search-submit" class="search-submit" name="search-button" type="submit" aria-label="Begin Product Search" title="search for products" value="search" onclick="ga('mc.send', 'event', 'header', 'search_go_button', 'search');">
+            </form>
+            <dl class="cart-nav">
+                <img src="shopping cart.jpg" alt="Shopping cart" width="23" height="23">
+                <dt class="cart-title"> My Cart: </dt>
+                <dt class="items-amount">
+                    <a href="Shopping cart" onclick="ga('mc.send','event','header','cart','cart');">
+                        <strong>0</strong>
+                         items
+                    </a>
+                </dt>
+            </dl>
+        </div>
+
+        <div class="navbar" id="webNavbar">
+            <ul class="navbar-mainTitle">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Products</a>
+                    <div class="dropdown-content1">
+                        <a href="#">Refuribshed Deals</a>
+                        <a href="#">Clearacne</a>
+                        <a href="#">Hot AD Deals</a>
+                        <a href="#">Computers</a>
+                        <a href="#">Apple</a>
+                        <a href="#">Computer Parts</a>
+                        <a href="#">PC Builders</a>
+                        <a href="#">Electronics</a>
+                        <a href="#">Maker/STM</a>
+                        <a href="#">Networking</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Software & Gaming</a>
+                    </div> 
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Brand Showcase</a>
+                    <div class="dropdown-content2">
+                        <a href="#">IMAGES</a>
+                    </div>
+                </li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Help</a></li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Community</a></li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Service & Repair</a></li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Online Catalog</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="advertise">
+            <div class="item1"><img src="advert-large.png"></div>
+            <div class="item2"><img src="advert-small.jpg" width="300" height="100"></div>
+            <div class="item3"><img src="advert-small-2.jpg" width="300" height="100"></div>
+            <div class="item4"><img src="advert-small-3.jpg" width="300" height="100"></div>
+        </div>
+
+        <div class="simple-icon">
+            <div class="icon-1"><img src="time-icon.jpg" width="35" height="30"></div>
+            <div class="icon-1-word" style="font-size: 12px;"><l1>18 minute in-store</l1></div>
+            <div class="icon-1-word" style="font-size: 12px;"><l1>pickup</l1></div>
+            <div class="icon-2"><img src="payment icon.jpg" width="45" height="30"></div>
+            <div class="icon-2-word" style="font-size: 12px;">Safe Payment</div>
+            <div class="icon-3"><img src="email-icon.jpg" width="40" height="30"></div>
+            <div class="icon-3-word" style="font-size: 12px;"><l1>Sign up with Email</l1></div>
+            <div class="icon-3-word" style="font-size: 12px;"><l1>premier access to best offers</l1></div>
+            <div class="icon-4"><img src="return-icon.jpg" width="30" height="35"></div>
+            <div class="icon-4-word" style="font-size: 12px;"><l1>Free Return</l1></div>
+            <div class="icon-4-word" style="font-size: 12px;"><l1>within 15 days for all goods</l1></div>
+        </div>
+
+        <h4 class="informationTitle">MOST POPULAR CATEGORIES</h4>
+        <hr>
+
+        <div class="popular-categories">
+            <a href="#" class="cate1"><img src="CategoryImages_laptops500.jpg" width="150" height="150"></a>
+            <a href="#" class="cate2"><img src="CategoryImages_desktops500.jpg" width="150" height="150"></a>
+            <a href="#" class="cate3"><img src="CategoryImages_videoCards500.jpg" width="150" height="150"></a>
+            <a href="#" class="cate4"><img src="CategoryImages_monitors500.jpg" width="150" height="150"></a>
+            <a href="#" class="cate5"><img src="CategoryImages_processors500.jpg" width="150" height="150"></a>
+            <a href="#" class="cate1-w">LAPTOPS</a>
+            <a href="#" class="cate2-w">DESKTOPS</a>
+            <a href="#" class="cate3-w">VIDEO CARDS</a>
+            <a href="#" class="cate4-w">MONITORS</a>
+            <a href="#" class="cate5-w">PROCESSORS</a>
+        </div>
+
+        <h4 class="informationTitle">BEST SALE PRODUCTS</h4>
+        <hr>
+
+        <div class="saleProducts">
+            <div class="product-rect1" href="#product 1 page">
+                <a><img src="product 1.jpg"></a>
+                <a><l1>HP 15-dy2056ms 15.6" Laptop</l1></a>
+                <a><l1>Computer - Sliver</l1></a>
+                <a><l2><del>$699.99</del> SAVE $120.00</l2></a>
+                <a><l3 style="color:#C80606"><b><small>$</small>579.99</b></l3></a>
+                <a href="#" style="font-size: 12px;">SHOP <b>174</b> Laptops</a>
+            </div>
+            <div class="product-rect2" href="#product 2 page">
+                <a><img src="product 2.jpg"></a>
+                <a><l1>Intel Core i9-10850K Comet</l1></a>
+                <a><l1>Lake 3.6GHz Ten-Core LGA</l1></a>
+                <a><l1>1200 Boxed Processor</l1></a>
+                <a><l2><del>$649.99</del> SAVE $350.00</l2></a>
+                <a><l3 style="color:#C80606"><b><small>$</small>299.99</b></l3></a>
+                <a href="#" style="font-size: 12px;">SHOP <b>15</b> Interl Processors</a>
+            </div>
+            <div class="product-rect3" style="background-color: white;">
+                <a href="Productpage.html"><img src="product 3.jpg" id="product3-go" onclick="myFunction()" href="Productpage.html"></a>
+                <a><l1>HP Pavilion Gaming 15-</l1></a>
+                <a><l1>ec2021nr 15.6" Platinum</l1></a>
+                <a><l1>Collection Laptop Computer -</l1></a>
+                <a><l1>Black</l1></a>
+                <a><l2><del>$799.99</del> SAVE $100.00</l2></a>
+                <a><l3 style="color:#C80606"><b><small>$</small>699.99</b></l3></a>
+                <a href="#" style="font-size: 12px;">SHOP <b>15</b> Gaming Laptops</a>
+            </div>
+            <div class="product-rect4" href="#product 4 page">
+                <a><img src="product 4.jpg"></a>
+                <a><l1>Dell OptiPlex 3080 Micro</l1></a>
+                <a><l1>Desktop Computer</l1></a>
+                <a><l2><del>$789.99</del> SAVE $90.00</l2></a>
+                <a><l3 style="color:#C80606"><b><small>$</small>699.99</b></l3></a>
+                <a href="#" style="font-size: 12px;">SHOP <b>65</b> Dell Desktops</a>
+            </div>
+            <div class="product-rect5" href="#product 5 page">
+                <a><img src="product 5.jpg"></a>
+                <a><l1>Apple MacBook Air MGN63LL/A</l1></a>
+                <a><l1>M1 Late 2020 13.3" Laptop</l1></a>
+                <a><l1>Computer - Space Gray</l1></a>
+                <a><l2><del>$999.99</del> SAVE $70.00</l2></a>
+                <a><l3 style="color:#C80606"><b><small>$</small>929.99</b></l3></a>
+                <a href="#" style="font-size: 12px;">SHOP <b>14</b> Apple Laptops</a>
+            </div>
+            <div class="product-rect6" href="#product 6 page">
+                <a><img src="product 6.jpg"></a>
+                <a><l1>Apple iPad 8 - Space Gray (Late</l1></a>
+                <a><l1>2020)</l1></a>
+                <a><l2><del>$329.99</del> SAVE $40.00</l2></a>
+                <a><l3 style="color:#C80606"><b><small>$</small>289.99</b></l3></a>
+                <a href="#" style="font-size: 12px;">SHOP <b>40</b> iPads</a>
+            </div>
+            <div class="product-rect7" href="#product 7 page">
+                <a><img src="product 7.jpg"></a>
+                <a><l1>Corsair Vengeance RGB Pro</l1></a>
+                <a><l1>32GB (2x16GB) DDR4-3200</l1></a>
+                <a><l1>PC4-25600 CL16 Dual Channel </l1></a>
+                <a><l1>Desktop...</l1></a>
+                <a><l2><del>$224.99</del> SAVE $40.00</l2></a>
+                <a><l3 style="color:#C80606"><b><small>$</small>184.99</b></l3></a>
+                <a href="#" style="font-size: 12px;">SHOP <b>92</b> DDR Memory Kits</a>
+            </div>
+            <div class="product-rect8" href="#product 8 page">
+                <a><img src="product 8.jpg"></a>
+                <a><l1>Lenovo Flex 5 14" 2-in-1 Laptop</l1></a>
+                <a><l1>Computer - Grey</l1></a>
+                <a><l2><del>$639.99</del> SAVE $40.00</l2></a>
+                <a><l3 style="color:#C80606"><b><small>$</small>599.99</b></l3></a>
+                <a href="#" style="font-size: 12px;">SHOP <b>19</b> 2 in 1 Laptops</a>
+            </div>
+            <div class="product-rect9" href="#product 9 page">
+                <a><img src="product 9.jpg"></a>
+                <a><l1>Inland Premium 1TB SSD 3D </l1></a>
+                <a><l1>NAND M.2 2280 PCle NVMe 3.0</l1></a>
+                <a><l1>x4 Internal Solid State Drive,... </l1></a>
+                <a><l2><del>$159.99</del> SAVE $35.00</l2></a>
+                <a><l3 style="color:#C80606"><b><small>$</small>124.99</b></l3></a>
+                <a href="#" style="font-size: 12px;">SHOP <b>80</b> SSDs</a>
+            </div>
+            <div class="product-rect10" href="#product 10 page">
+                <a><img src="product 10.jpg"></a>
+                <a><l1>EVGA SuperNOVA 850 GA 850</l1></a>
+                <a><l1>Watt 80 Plus Gold ATX Fully</l1></a>
+                <a><l1>Modular Power Supply</l1></a>
+                <a><l2><del>$159.99</del> SAVE $10.00</l2></a>
+                <a><l3 style="color:#C80606"><b><small>$</small>149.99</b></l3></a>
+                <a href="#" style="font-size: 12px;">SHOP <b>84</b> Power Supply</a>
+            </div>
+        </div>
+
+    </main> 
+
+    <footer>
+        <div class="rectangle">
+            <div class="customer-nav">
+                <a><h5>Customer Service</h5></a>
+                <a><l1>Check Out Status</l1></a>
+                <a><l1>How To Return</l1></a>
+                <a><l1>Merchandise</l1></a>
+                <a><l1>Service & Repair</l1></a>
+                <a><l1>Frequently Asked</l1></a>
+                <a><l1>Questions</l1></a>
+                <a><l1>Safe Shopping Promise</l1></a>
+                <a><l1>Recycling</l1></a>
+                <a><l1>Protection Plans</l1></a>
+            </div>
+            <div class="shopping-nav">
+                <a><h5>Shopping</h5></a>
+                <a><l1>Store Loactions</l1></a>
+                <a><l1>In-Store Pickup</l1></a>
+                <a><l1>Product Avaliability</l1></a>
+                <a><l1>Online Order</l1></a>
+                <a><l1>Restrictions</l1></a>
+                <a><l1>Return Policy</l1></a>
+                <a><l1>Credit Cards Accepted</l1></a>
+                <a><l1>Shipping Options</l1></a>
+            </div>
+            <div class="resource-nav">
+                <a><h5>Resources & Tools</h5></a>
+                <a><l1>Community</l1></a>
+                <a><l1>Rebate Center</l1></a>
+                <a><l1>Ink & Toner Finder</l1></a>
+                <a><l1>Careers</l1></a>
+                <a><l1>Sell to Micro Center</l1></a>
+                <a><l1>Site Map</l1></a>
+            </div>
+            <div class="indemand-nav">
+                <a><h5>In-Demand & Tech</h5></a>
+                <a><l1>Refurbished Deals</l1></a>
+                <a><l1>Closeouts</l1></a>
+                <a><l1>Open Box</l1></a>
+                <a><l1>Tech Support</l1></a>
+                <a><l1>In-Store Clinics</l1></a>
+            </div>
+
+            <div class="sideContent">
+                <div class="sg">
+                    <a><p><b>Satisfaction Guaranteed</b></p></a>
+                    <a><l1>We guarantee your satisfaction on every product</l1></a>
+                    <a><l1>we sell with a full refund in accordance with our</l1></a>
+                    <a><l1>return policy - no reciept needed if you have a</l1></a>
+                    <a><l1>Micro Center Insider Account.</l1></a>
+                </div>
+                <div class="careers">
+                    <a><l1>Work with the latest in computer and digital</l1></a>
+                    <a><l1>technology. Search the Micro Center Job Access</l1></a>
+                    <a><l1>site to review our latest openings.</l1></a>
+                    <a><button>CAREERS</button></a>
+                </div>
+                <div class="mediaIcon"></div>
+            </div>
+
+            <div class="Auth-nav">
+                <p>&copy 2021 Micro Electronics, Inc.</p>
+                <a href="#">About Micro Center</a>
+                <a href="#">Accessibility Policy</a>
+                <a href="#">California Privacy Rights</a>
+                <a href="#">Do Not Sell My Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions: Site</a>
+                <a href="#">Terms and Conditions: Sale</a>
+                <a href="#">ACopyrights & Trademarks</a>
+                <a href="#">Account Sign In</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles-Checkout.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="topnav" id="webTopnav">
+            <a href="#">About us</a>
+            <a href="#">Insider ACCOUNT</a>
+            <a href="#">My STORE</a>
+        </nav>
+
+        <div class="search-line" id="logo">
+            <a href="#Home" title="Micro Center Home Page">
+                <img src="https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/images_sf_MC_logo.png" alt="Micro Center">
+            </a>
+            <form id="form-search" class="form-inline-nav" method="POST" style="display:block;">
+                <input id="search-text" class="search-text" name="search-text" type="text" placeholder="Search" autocomplete="off">
+                <input id="search-submit" class="search-submit" name="search-button" type="submit" aria-label="Begin Product Search" title="search for products" value="search" onclick="ga('mc.send', 'event', 'header', 'search_go_button', 'search');">
+            </form>
+            <dl class=cart-nav>
+                <img src="shopping cart.jpg" alt="Shopping cart" width="23" height="23">
+                <dt class="cart-title"> My Cart: </dt>
+                <dt class="items-amount">
+                    <a href="Shopping cart" onclick="ga('mc.send','event','header','cart','cart');">
+                        <strong>1</strong>
+                         items
+                    </a>
+                </dt>
+            </dl>
+        </div>
+
+        <div class="navbar" id="webNavbar">
+            <ul class="navbar-mainTitle">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Products</a>
+                    <div class="dropdown-content1">
+                        <a href="#">Refuribshed Deals</a>
+                        <a href="#">Clearacne</a>
+                        <a href="#">Hot AD Deals</a>
+                        <a href="#">Computers</a>
+                        <a href="#">Apple</a>
+                        <a href="#">Computer Parts</a>
+                        <a href="#">PC Builders</a>
+                        <a href="#">Electronics</a>
+                        <a href="#">Maker/STM</a>
+                        <a href="#">Networking</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Software & Gaming</a>
+                    </div> 
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Brand Showcase</a>
+                    <div class="dropdown-content2">
+                        <a href="#">IMAGES</a>
+                    </div>
+                </li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Help</a></li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Community</a></li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Service & Repair</a></li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Online Catalog</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="User-Info">
+            <div class="userAccount-Info" style="font-size:10px;"> 
+                <a><l1>Do you already have an </l1></a>
+                <a href="#logIn-page"><l1>account</l1></a>
+                <a><l1> ? </l1></a>
+                <a href="#createAccount-page" ><l1>Create an Account</l1></a>
+            </div>
+            <a><hr></a>
+            <a><h4>Shipping Address</h4></a>
+            <div class="address">
+                <a><l1>First Name </l1><l2 style="color:#C80606">*</l2></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+                <a><l1>Last Name </l1><l2 style="color:#C80606">*</l2></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+                <a><l1>Email </l1><l2 style="color:#C80606">*</l2></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+                <a><l1>Company Name</l1></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+                <a><l1>Address 1 </l1><l2 style="color:#C80606">*</l2></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+                <a><l1>Address 2</l1></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+                <a><l1>City </l1><l2 style="color:#C80606">*</l2></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+                <a><l1>State </l1><l2 style="color:#C80606">*</l2></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+                <a><l1>Zip Code </l1><l2 style="color:#C80606">*</l2></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+                <a><l1>Mobile Phone </l1><l2 style="color:#C80606">*</l2></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+            </div>
+            <a style="width: 500px;"><l1 style="color:#C80606">Note - </l1><l2 style="font-size:10px;">if paying now, your billing address <b>must match your credit card billing adress</b>. Micro Center Online uses industry-standard SSL(Secure Sockets Layer) encryption to <b>protect</b> the confidentiality of <b>your personal information</b>.</l2></a>
+            <a><hr></a>
+            <a><h4>Payment Methods</h4></a>
+            <div class="payment-Select">
+                <a><l1>Full Name </l1><l2 style="color:#C80606">*</l2></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+                <a><l1>Card Number </l1><l2 style="color:#C80606">*</l2></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+                <a><l1>Expiry Date </l1><l2 style="color:#C80606">*</l2></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+                <a><l1>Security Code </l1><l2 style="color:#C80606">*</l2></a>
+                <form method="POST">
+                    <input type="text" class="detail-Info" id="detail-Info" name="typeIn-details" placeholder=" " autocomplete="off">
+                </form>
+
+            </div>
+        </div>
+
+        <div class="Order-List">
+            <a><h4>Order Summary</h4></a>
+            <a><h6>HP Pavilion Gaming 15-ec2021nr 15.6" Platinum Collection Laptop Computer - Black</h6></a>
+            <a><img src="product 3.jpg" width="100" height="100"></a>
+            <ul class="price-List">
+                <li><h6>Sub-Total: $699.99</h6></li>
+                <li><h6>Shipping: $20.00</h6></li>
+                <li><h6>Tax: $0.00</h6></li>
+                <li><h6>Total: $719.99</h6></li>
+                <a><h5>Check Out</h5></a>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="rectangle">
+            <div class="customer-nav">
+                <a><h5>Customer Service</h5></a>
+                <a><l1>Check Out Status</l1></a>
+                <a><l1>How To Return</l1></a>
+                <a><l1>Merchandise</l1></a>
+                <a><l1>Service & Repair</l1></a>
+                <a><l1>Frequently Asked</l1></a>
+                <a><l1>Questions</l1></a>
+                <a><l1>Safe Shopping Promise</l1></a>
+                <a><l1>Recycling</l1></a>
+                <a><l1>Protection Plans</l1></a>
+            </div>
+            <div class="shopping-nav">
+                <a><h5>Shopping</h5></a>
+                <a><l1>Store Loactions</l1></a>
+                <a><l1>In-Store Pickup</l1></a>
+                <a><l1>Product Avaliability</l1></a>
+                <a><l1>Online Order</l1></a>
+                <a><l1>Restrictions</l1></a>
+                <a><l1>Return Policy</l1></a>
+                <a><l1>Credit Cards Accepted</l1></a>
+                <a><l1>Shipping Options</l1></a>
+            </div>
+            <div class="resource-nav">
+                <a><h5>Resources & Tools</h5></a>
+                <a><l1>Community</l1></a>
+                <a><l1>Rebate Center</l1></a>
+                <a><l1>Ink & Toner Finder</l1></a>
+                <a><l1>Careers</l1></a>
+                <a><l1>Sell to Micro Center</l1></a>
+                <a><l1>Site Map</l1></a>
+            </div>
+            <div class="indemand-nav">
+                <a><h5>In-Demand & Tech</h5></a>
+                <a><l1>Refurbished Deals</l1></a>
+                <a><l1>Closeouts</l1></a>
+                <a><l1>Open Box</l1></a>
+                <a><l1>Tech Support</l1></a>
+                <a><l1>In-Store Clinics</l1></a>
+            </div>
+
+            <div class="sideContent">
+                <div class="sg">
+                    <a><p><b>Satisfaction Guaranteed</b></p></a>
+                    <a><l1>We guarantee your satisfaction on every product</l1></a>
+                    <a><l1>we sell with a full refund in accordance with our</l1></a>
+                    <a><l1>return policy - no reciept needed if you have a</l1></a>
+                    <a><l1>Micro Center Insider Account.</l1></a>
+                </div>
+                <div class="careers">
+                    <a><l1>Work with the latest in computer and digital</l1></a>
+                    <a><l1>technology. Search the Micro Center Job Access</l1></a>
+                    <a><l1>site to review our latest openings.</l1></a>
+                    <a><button>CAREERS</button></a>
+                </div>
+                <div class="mediaIcon"></div>
+            </div>
+
+            <div class="Auth-nav">
+                <p>&copy 2021 Micro Electronics, Inc.</p>
+                <a href="#">About Micro Center</a>
+                <a href="#">Accessibility Policy</a>
+                <a href="#">California Privacy Rights</a>
+                <a href="#">Do Not Sell My Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions: Site</a>
+                <a href="#">Terms and Conditions: Sale</a>
+                <a href="#">ACopyrights & Trademarks</a>
+                <a href="#">Account Sign In</a>
+            </div>
+
+        </div>
+    </footer>
+
+    
+</body>
+</html>

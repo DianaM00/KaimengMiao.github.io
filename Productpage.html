@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles-Product.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="topnav" id="webTopnav">
+            <a href="#">About us</a>
+            <a href="#">Insider ACCOUNT</a>
+            <a href="#">My STORE</a>
+        </nav>
+
+        <div class="search-line" id="logo">
+            <a href="#Home" title="Micro Center Home Page" class="WebsiteLogo">
+                <img src="https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/images_sf_MC_logo.png" alt="Micro Center">
+            </a>
+            <form id="form-search" class="form-inline-nav" method="POST" style="display:block;">
+                <input id="search-text" class="search-text" name="search-text" type="text" placeholder="Search" autocomplete="off">
+                <input id="search-submit" class="search-submit" name="search-button" type="submit" aria-label="Begin Product Search" title="search for products" value="search" onclick="ga('mc.send', 'event', 'header', 'search_go_button', 'search');">
+            </form>
+            <dl class="cart-nav">
+                <img src="shopping cart.jpg" alt="Shopping cart" width="23" height="23">
+                <dt class="cart-title"> My Cart: </dt>
+                <dt class="items-amount">
+                    <a href="Shopping cart" onclick="ga('mc.send','event','header','cart','cart');">
+                        <strong>0</strong>
+                         items
+                    </a>
+                </dt>
+            </dl>
+        </div>
+
+        <div class="navbar" id="webNavbar">
+            <ul class="navbar-mainTitle">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Products</a>
+                    <div class="dropdown-content1">
+                        <a href="#">Refuribshed Deals</a>
+                        <a href="#">Clearacne</a>
+                        <a href="#">Hot AD Deals</a>
+                        <a href="#">Computers</a>
+                        <a href="#">Apple</a>
+                        <a href="#">Computer Parts</a>
+                        <a href="#">PC Builders</a>
+                        <a href="#">Electronics</a>
+                        <a href="#">Maker/STM</a>
+                        <a href="#">Networking</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Software & Gaming</a>
+                    </div> 
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Brand Showcase</a>
+                    <div class="dropdown-content2">
+                        <a href="#">IMAGES</a>
+                    </div>
+                </li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Help</a></li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Community</a></li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Service & Repair</a></li>
+                <li style="float:right"><a href="#" class="navbar-subTitle">Online Catalog</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="nav-smallTitle">
+            <a href="#">Home</a>
+            <a><l1> > </l1></a>
+            <a href="#">Computers</a>
+            <a><l1> > </l1></a>
+            <a href="#">Laptops/Notebooks</a>
+        </div>
+
+        <section>
+            <h3 style="color:#3B277D">HP Pacilion Gming 15-ec2021nr 15.6" Platinum Collection Laptop Computer - Black</h3>
+            <p style="color:#C80606"><b>AN EXCLUSIVE PLATINUM COLLECTION ITEM!</b></p>
+
+            <article>
+                <div class="productImg">
+                    <img src="product 3.jpg" width="150" height="150" style="padding:5px 10px;">
+                    <li class="small-images">
+                            <a><img src="product 3.jpg" width="20" height="20" style="grid-column:1; grid-row:1;"></a>
+                            <a><img src="2_mini.jpg" width="20" height="20" style="grid-column:2; grid-row:1;"></a>
+                            <a><img src="3_mini.jpg" width="20" height="20" style="grid-column:3; grid-row:1;"></a>
+                            <a><img src="4_mini.jpg" width="20" height="20" style="grid-column:4; grid-row:1;"></a>
+                            <a><img src="5_mini.jpg" width="20" height="20" style="grid-column:5; grid-row:1;"></a>
+                    </li>
+                </div>
+
+                <div class="upper-centerC">
+                    <a><l1><b style="font-size: 14px; padding-bottom:20px;">BUYING OPTIONS</b></l1></a>
+                    <a><hr style="width:500px; float:left"></a>
+                    <a><l1 style="font-size: 14px; padding: 5px 10px ;">OPTION 1</l1></a>
+                    <a><small style="margin-left: 40px; padding-bottom: 10px;">- Usually Ships In 5-7 Business Days.</small></a>
+                    <a><l1 style="font-size: 14px; padding: 5px 10px ;">OPTION 2 <small> - Most Popular!</small></l1></a>
+                    <a><small style="margin-left: 40px; padding-bottom: 10px;">- Get It Now</small></a>
+                    <a>
+                        <form method="POST">
+                            <input type="text" class="selectStore" id="selectStore" name="ItemsToCart" placeholder="Please Seclect Your Store" autocomplete="off">
+                        </form>
+                    </a>
+                    <a><hr style="width:500px; float:left"></a>
+                    <a><small style="font-size: 12px;">Get an <b>additional $35.00 off</b> instantly in-store: Pay $664.99 upon approval for the <b>Micro Center Insider Credit Card.</b> (regular apply)</small></a>
+                    <div class="wishList">
+                        <l1 style="font-size: 14px; margin-top: 20px;">My Wish Lists: </l1>
+                        <form method="POST" style="display:block;">
+                            <input type="text" class="createWishlist" id="createWishlist" name="ItemsToCart" placeholder="+ Create a New Wish List" autocomplete="off"> <l1 style="font-size:8px;">Add to my wish list</l1>
+                        </form>
+                    </div>
+                </div>
+            
+                <div>
+                    <ul class="specific-navBar">
+                        <li><a href="#" role="tab" style="background-color: #3B277D; color:rgb(206, 204, 204);">OVERVIEW</a></li>
+                        <li><a href="#" role="tab">SPECS</a></li>
+                        <li><a href="#" role="tab">ADD-ONS</a></li>
+                        <li><a href="#" role="tab">REVIEWS</a></li>
+                        <li><a href="#" role="tab">Q & A</a></li>
+                        <li><a href="#" role="tab">MORE INFO</a></li>
+                        <li><a href="#" role="tab">WARRANTY & SUPPORT</a></li>
+                    </ul>
+                </div>
+
+                <div class="upperLeft1" style="font-size: 12px;">
+                    <a><l1>SKU:</l1><l2>244715</l2></a>
+                    <a><l1>Mfr Part:</l1><l2>353L6UA#ABA</l2></a>
+                    <a><l1>UPC:</l1><l2>195697743566</l2></a>
+                </div>
+                <div class="upperLeft2" style="font-size: 12px;">
+                    <a><img src="rating.gif"></a>
+                    <a><l1><b>5</b> out of <b>5</b> (100%) reviewers recommend this products.</l1></a>
+                    <a href="#"><l1>Read all 6 reviews</l1><l2>Write a review</l2></a>
+                </div>
+                <div class="upperRight" style="font-size: 12px;">
+                    <ul class="professional-Info">
+                        <li>AMD Ryzen 5 5600H 3.3GHz Processor</li>
+                        <li>NVIDIA GeForce GTX 1650 4GB GDDR6</li>
+                        <li>8GB DDR4-3200 RAM</li>
+                        <li>512GB Solid State Drive</li>
+                        <li>Microsoft Windows 10 Home</li>
+                        <li>Multi-Format SD Media Card Reader</li>
+                        <li>10/100/1000 Network</li>
+                        <li>2x2 Wireless LAN Wifi 6 (802.11ax)+Bluetooth 5.0 Combo</li>
+                        <li>15.6" Full HD 144Hz IPS Anti-Glare Micro-Edge Display</li>
+                    </ul>
+                    <a><l1>Game Ready. Performance Ready. The thin and poweful HP Platinum Collection Pavilion Gaming 15-ec2021nr Laptop lets you experience high-grade graphics and processing power that meets your gaming and multitasking needs.</l1></a>
+                </div>
+                <div class="specific-Info">
+                    <a><img src="PlatinumCollection_P.jpg"></a>
+                    <a><h4>Power to do it all</h4></a>
+                    <a><l1>Take on everything with a high performance AMD processor and advanced graphics. A FHD resolution display with fast refresh rate delivers smooth gameplay visuals, while also bringing entertainment and content to life.</l1></a>
+                    <a><h4>Stay in the game</h4></a>
+                    <a><l1>Game harder for longer on a laptop equipped with a dual fan system for enhanced thermal cooling1. A wide rear vent and enlarged air inlets maximize airflow to optimize your overall performance and stability, keeping the machine cool during extended usage. Up your game with customizable performance options with OMEN Gaming Hub.</l1></a>
+                    <a><h4>Daring design</h4></a>
+                    <a><l1>Get lost in the game. A sleek micro-edge bezel display provides a maximum viewing experience while the front-firing speakers with Audio by B&O deliver powerful, custom-tuned sound.</l1></a>
+                    <a><h5>Windows 10</h5></a>
+                    <a><l1><small>Do great things confidently with the familiar feel of Windows - only better.</small></l1></a>
+                    <a><h5>AMD Ryzen™ 5000 H-Series Mobile Processors</h5></a>
+                    <a><l1><small>Now you can enjoy elite gaming performance on a thin and light notebook with amazing battery life, thanks to the new AMD Ryzen™ 5000 H-Series Mobile Processors. Never compromise on your gaming laptop again.</small></l1></a>
+                    <a><h5>NVIDIA® GeForce® GTX 1650 graphics</h5></a>
+                    <a><l1><small>With the all-new NVIDIA Turing™ architecture, gaming and streaming will never be the same. Get all the power you need for fast, smooth, power-efficient performance from NVIDIA® GeForce® GTX 1650.</small></l1></a>
+                    <a><h5>FHD IPS display</h5></a>
+                    <a><l1><small>Enjoy crystal-clear images from any angle. With 178° wide-viewing angles and a vibrant 1920 x 1080 resolution, you'll always have a great view of your favorite content.</small></l1></a>
+                    <a><h5>144 Hz FHD anti-glare display</h5></a>
+                    <a><l1><small>Reduce frustrating lag and image ghosting with a display that combines a 144 Hz refresh rate, G-Sync support, and a 1080p resolution for smooth, crisp gameplay.</small></l1></a>
+                    <a><h5>PCIe SSD storage</h5></a>
+                    <a><l1><small>Boot up in seconds with lightning fast speed with up to 512 GB PCIe SSD storage.</small></l1></a>
+                    <a><l1 class= "table-list">Operating System: Windows 10 Home 64</l1></a>
+                    <a><l1 class= "table-list">Processor: AMD Ryzen™ 5 5600H</l1></a>
+                    <a><l1 class= "table-list">Display: 15.6" diagonal FHD display</l1></a>
+                    <a><l1 class= "table-list">Weight: Starting at 4.37 lb</l1></a>
+                    <a><l1 class= "table-list">Memory: 8 GB DDR4</l1></a>
+                    <a><l1 class= "table-list">Battery Life: Up to 6 hours</l1></a>
+                    <a><l1 class= "table-list">Hard drivers: 512 GB SSD</l1></a>
+                    <a><l1 class= "table-list">Wireless technology: Realtek Wi-Fi 6 (2x2) and Bluetooth® 5.2 combo (Supporting Gigabit data rate)</l1></a>
+
+                </div>
+
+                <div class="price-Info">
+                    <l1 style="font-size:10px;"><del>$799.99</del><l2 style="color:#C80606; font-size:14px;"> SAVE $100.00</l2></l1>
+                    <l1 style="color:#C80606;"><small>$</small><l2 style="font-size: 24px;">699.99</l2></l1>
+                    <form method="POST" style="display:block;">
+                        <input type="text" class="items-to-cart" id="i-to-cart" name="ItemsToCart" placeholder="Quantity" autocomplete="off">
+                    </form>
+                    <a href="ShoppingCartPage.html" class="product-btn" id="product-btn1" onclick="myFunction()">ADD TO CART</a>
+                    <a href="CheckoutPage.html" class="product-btn" id="product-btn2" onclick="myFunction()">CHECKOUT</a>
+                </div>
+
+                <div class="SR-box">
+                    <a style="font-size: 16px; font-weight:500;">Support Resources</a>
+                    <a><hr></a>
+                    <a style="font-size: 14px; padding-bottom: 5px;">Return Policy:</a>
+                    <a style="font-size: 10px;">May be returned within 15 days of purchase* </a>
+                    <a style="font-size: 12px; padding-top:8px; padding-bottom: 2px;"><b>Vendor Warranty:</b></a>
+                    <a style="font-size: 10px;">Parts: 1 Year Limited</a>
+                    <a style="font-size: 10px;">Labor: 1 Year Limites</a>
+                    <a style="font-size: 12px; padding-top:8px; padding-bottom: 2px;"><b>Vendor Support:</b></a>
+                    <a style="font-size: 10px;">Main Website:</a>
+                    <a href="http://www8.hp.com/us/en/home.html" style="font-size: 10px;">http://www8.hp.com/us/en/home.html</a>
+                    <a style="font-size: 10px; padding-top: 2px;">Support Website:</a>
+                    <a href="http://www8.hp.com/us/en/support-drivers.html" style="font-size: 10px;">http://www8.hp.com/us/en/support-drivers.html</a>
+                    <a style="font-size:10px; padding-top: 2px;">800-474-6836</a>
+                    <a style="font-size: 12px; padding-top:8px; padding-bottom: 2px;"><b>Micro Center Community</b></a>
+                    <a href="#" style="font-size: 10px;">Overview of USB Standards, Connections and Functions</a>
+                    <a href="#" style="font-size: 10px;">Technical Support Q & A</a>
+                    <a style="font-size: 12px; padding-top:8px; padding-bottom: 2px;"><b>Knowledge Base</b></a>
+                    <a href="#" style="font-size: 10px;">Windows</a>   
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="rectangle">
+            <div class="customer-nav">
+                <a><h5>Customer Service</h5></a>
+                <a><l1>Check Out Status</l1></a>
+                <a><l1>How To Return</l1></a>
+                <a><l1>Merchandise</l1></a>
+                <a><l1>Service & Repair</l1></a>
+                <a><l1>Frequently Asked</l1></a>
+                <a><l1>Questions</l1></a>
+                <a><l1>Safe Shopping Promise</l1></a>
+                <a><l1>Recycling</l1></a>
+                <a><l1>Protection Plans</l1></a>
+            </div>
+            <div class="shopping-nav">
+                <a><h5>Shopping</h5></a>
+                <a><l1>Store Loactions</l1></a>
+                <a><l1>In-Store Pickup</l1></a>
+                <a><l1>Product Avaliability</l1></a>
+                <a><l1>Online Order</l1></a>
+                <a><l1>Restrictions</l1></a>
+                <a><l1>Return Policy</l1></a>
+                <a><l1>Credit Cards Accepted</l1></a>
+                <a><l1>Shipping Options</l1></a>
+            </div>
+            <div class="resource-nav">
+                <a><h5>Resources & Tools</h5></a>
+                <a><l1>Community</l1></a>
+                <a><l1>Rebate Center</l1></a>
+                <a><l1>Ink & Toner Finder</l1></a>
+                <a><l1>Careers</l1></a>
+                <a><l1>Sell to Micro Center</l1></a>
+                <a><l1>Site Map</l1></a>
+            </div>
+            <div class="indemand-nav">
+                <a><h5>In-Demand & Tech</h5></a>
+                <a><l1>Refurbished Deals</l1></a>
+                <a><l1>Closeouts</l1></a>
+                <a><l1>Open Box</l1></a>
+                <a><l1>Tech Support</l1></a>
+                <a><l1>In-Store Clinics</l1></a>
+            </div>
+
+            <div class="sideContent">
+                <div class="sg">
+                    <a><p><b>Satisfaction Guaranteed</b></p></a>
+                    <a><l1>We guarantee your satisfaction on every product</l1></a>
+                    <a><l1>we sell with a full refund in accordance with our</l1></a>
+                    <a><l1>return policy - no reciept needed if you have a</l1></a>
+                    <a><l1>Micro Center Insider Account.</l1></a>
+                </div>
+                <div class="careers">
+                    <a><l1>Work with the latest in computer and digital</l1></a>
+                    <a><l1>technology. Search the Micro Center Job Access</l1></a>
+                    <a><l1>site to review our latest openings.</l1></a>
+                    <a><button>CAREERS</button></a>
+                </div>
+                <div class="mediaIcon"></div>
+            </div>
+
+            <div class="Auth-nav">
+                <p>&copy 2021 Micro Electronics, Inc.</p>
+                <a href="#">About Micro Center</a>
+                <a href="#">Accessibility Policy</a>
+                <a href="#">California Privacy Rights</a>
+                <a href="#">Do Not Sell My Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions: Site</a>
+                <a href="#">Terms and Conditions: Sale</a>
+                <a href="#">ACopyrights & Trademarks</a>
+                <a href="#">Account Sign In</a>
+            </div>
+
+        </div>
+    </footer>
+
+    
+</body>
+</html>
